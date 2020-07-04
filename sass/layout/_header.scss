@@ -1,0 +1,27 @@
+.header {
+    height: 100vh;
+    background-image: url(../img/alien-2.jpg);
+    background-size: cover;
+    background-position: top;
+    background-color: $color-black;
+    position: relative;
+    
+    /* 192dpi is retina screen refference number */
+    @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
+        only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
+        only screen and (min-width: 125em) {
+        background-image: linear-gradient(
+            to right bottom,
+            rgba($color-primary-light, 0.8),
+            rgba($color-primary-dark, 0.8)),
+        url(../img/hero.jpg);
+    }
+    
+    &__text-box {
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+}

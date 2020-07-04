@@ -1,0 +1,112 @@
+/*========About Section 
+==========================================*/
+.section-about {
+    background-image: linear-gradient(
+        to right bottom,
+        rgba($color-grey-dark-3, 0.9),
+        rgba($color-black, 0.9)),
+    url(../img/alien-4.jpg);
+    background-size: cover;
+    background-position: top;
+    padding: 25rem 3rem;
+
+    @include respond(tab-port) {
+        padding: 20rem 0;
+    }
+}
+
+/*========Cast Section 
+==========================================*/
+
+.section-cast {
+    padding: 20rem 3rem;
+    // background-image:
+    // url(../img/alien-3.jpg);
+    // background-size: cover;
+    
+
+    @include respond(tab-port) {
+        padding: 10rem 0;
+    }
+
+    img {
+        width: 100%;
+    }
+
+}
+
+/*========Aliens Section 
+==========================================*/
+
+.section-aliens {
+    background-image: linear-gradient(
+        to right bottom,
+        rgba($color-grey-dark-3, 0.9),
+        rgba($color-black, 0.9)),
+    url(../img/alien-4.jpg);
+    background-size: cover;
+    background-position: top;
+    padding: 25rem 0 15rem 0;
+    margin-top: -10rem;
+
+    @include respond(tab-port) {
+        padding: 20rem 0 10rem 0;
+    }
+}
+
+/*========Contact Section 
+==========================================*/
+
+.section-book {
+    padding: 15rem 0;
+    background-image: linear-gradient(
+        to right bottom,
+        rgba($color-grey-dark-3, 0.9),
+        rgba($color-black, 0.9)),
+        url(../img/contact.jpg);
+
+    @include respond(tab-port) {
+        padding: 10rem 0;
+    }
+}
+
+.book {
+    background-image: linear-gradient(
+        to right bottom,
+        rgba($color-grey-dark-3, 0.7),
+        rgba($color-black, 0.7)),;
+    background-size: 100%;
+    border-radius: 3px;
+    box-shadow: 0 1.5rem 4rem rgba($color-grey-dark-3, .2);
+
+    @include respond(tab-land) {
+        background-image: linear-gradient(105deg, 
+        rgba($color-white, .9) 0%,
+        rgba($color-white, .9) 65%,
+        transparent 65%) ,
+url(../img/contact.jpg);
+        background-size: cover;
+    }
+
+    @include respond(tab-port) {
+        background-image: linear-gradient(to right, 
+        rgba($color-white, .9) 0%,
+        rgba($color-white, .9) 100%),
+url(../img/contact.jpg);
+    }
+
+    &__form {
+        width: 50%;
+        padding: 6rem;
+        text-align: center;
+        margin: 0 auto;
+
+        @include respond(tab-land) {
+            width: 65%;
+        }
+
+        @include respond(tab-port) {
+            width: 100%;
+        }
+    }
+}
