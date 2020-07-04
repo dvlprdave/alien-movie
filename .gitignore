@@ -1,5 +1,5 @@
-# Node Modules
+dist
 node_modules
-
-# Parcel
-./cache
+.cache
+*.log
+.DS_Store
